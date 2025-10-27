@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Education</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom right, #89CFF0, #005f99); /* light blue to deep blue */
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Floating decorations */
+    .decor {
+      position: absolute;
+      width: 70px;
+      opacity: 0.9;
+      animation: float 7s ease-in-out infinite;
+    }
+
+    /* Placing many student items */
+    .pencil    { top: 20px; left: 40px; animation-delay: 0s; }
+    .book      { bottom: 60px; right: 50px; animation-delay: 2s; }
+    .bag       { top: 100px; right: 150px; animation-delay: 4s; }
+    .eraser    { bottom: 120px; left: 80px; animation-delay: 1s; }
+    .ruler     { top: 220px; left: 200px; animation-delay: 3s; }
+    .pen       { bottom: 200px; right: 200px; animation-delay: 5s; }
+    .notebook  { top: 300px; right: 80px; animation-delay: 2.5s; }
+    .board     { bottom: 40px; left: 40px; width: 90px; animation-delay: 3.5s; }
+    .calculator{ top: 180px; right: 250px; width: 65px; animation-delay: 4.5s; }
+    .sharpener { bottom: 250px; left: 150px; width: 60px; animation-delay: 2s; }
+    .paperclip { top: 400px; left: 100px; width: 50px; animation-delay: 6s; }
+    .globe     { bottom: 100px; right: 300px; width: 80px; animation-delay: 5.5s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    /* Login box */
+    .login-box {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+      text-align: center;
+      backdrop-filter: blur(8px);
+      z-index: 10;
+    }
+
+    .login-box h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    .login-box input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #007acc;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      background: #005f99;
+    }
+
+    /* Social buttons */
+    .socials {
+      margin-top: 20px;
+    }
+    .socials a {
+      margin: 0 8px;
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      background: rgba(0,0,0,0.3);
+      padding: 8px 14px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+    .socials a:hover {
+      background: rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Student items floating around -->
+  <img src="https://cdn-icons-png.flaticon.com/512/201/201818.png" class="decor pencil">
+  <img src="https://cdn-icons-png.flaticon.com/512/2972/2972029.png" class="decor book">
+  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135745.png" class="decor bag">
+  <img src="https://cdn-icons-png.flaticon.com/512/2891/2891571.png" class="decor eraser">
+  <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" class="decor ruler">
+  <img src="https://cdn-icons-png.flaticon.com/512/3131/3131625.png" class="decor pen">
+  <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" class="decor notebook">
+  <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" class="decor board">
+  <img src="https://cdn-icons-png.flaticon.com/512/2702/2702134.png" class="decor calculator">
+  <img src="https://cdn-icons-png.flaticon.com/512/527/527963.png" class="decor sharpener">
+  <img src="https://cdn-icons-png.flaticon.com/512/2985/2985149.png" class="decor paperclip">
+  <img src="https://cdn-icons-png.flaticon.com/512/2991/2991158.png" class="decor globe">
+
+  <!-- Login box -->
+  <div class="login-box">
+    <h1>Student Education</h1>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Enter</button>
+
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a> <!-- Added Twitter -->
+    </div>
+  </div>
+
+</body>
+</html>
